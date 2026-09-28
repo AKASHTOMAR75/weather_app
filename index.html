@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Enter city name..." spellcheck="false">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Error message yahan dikhega -->
+        <p class="error" id="error-msg" style="display: none;"></p>
+
+        <!-- Weather details yahan dikhegi -->
+        <div class="weather" id="weather-box" style="display: none;">
+            <h1 class="temp" id="temp">--°C</h1>
+            <h2 class="city" id="city">City Name</h2>
+            <p class="desc" id="description">Weather condition</p>
+
+            <div class="details">
+                <div class="col">
+                    <div>
+                        <p class="humidity" id="humidity">--%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <p class="wind" id="wind">-- km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
